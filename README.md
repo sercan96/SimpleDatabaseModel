@@ -40,3 +40,8 @@ LibraryManagementSystem is a project containing a basic database model for a lib
 * The constructor of the BaseConfiguration class is used to configure the database columns of the properties (ModifiedDate, CreatedDate, DeletedDate) in the BaseEntity class. The Property method allows configuring a specific property. The HasColumnName method specifies the name of the column in the database.
 
 * This configuration ensures that the public properties in the BaseEntity class are correctly reflected in the database. For example, the ModifiedDate property is called the "Updated Date" column. This configuration is used to configure the database model with the Entity Framework Code First approach.
+
+ Here I would like to briefly talk about data loading strategies.
+
+ <h2> LAZY LOADING </h2>
+ 
