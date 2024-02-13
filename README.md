@@ -44,4 +44,13 @@ LibraryManagementSystem is a project containing a basic database model for a lib
  Here I would like to briefly talk about data loading strategies.
 
  <h2> LAZY LOADING </h2>
+
+![LazyLoadng](https://github.com/sercan96/SimpleDatabaseModel/assets/38535473/dd7fc284-53ab-4755-956b-bb855e7de00c)
+
+* In this example, when accessing <b>'product.Category.Name'</b>, relational data is automatically loaded via Lazy Loading. The <b>'Category'</b> property is marked with the <b>'virtual'</b> keyword, allowing relational data to be loaded only when needed
+   
+ <h2> EAGER LOADING </h2>
  
+![EagerLoading](https://github.com/sercan96/SimpleDatabaseModel/assets/38535473/502c35e8-8c72-4bc6-91ca-e4fbfac9a8dc)
+
+ In this example, the <b>'Include'</b> method is used to request the loading of the <b>'Category'</b> relational data for the <b>'Products'</b> query. This allows Eager Loading to be used, ensuring that relational data is loaded immediately. As a result, each product and its category are loaded in a single query, eliminating the need for separate queries to access each product's category. This can improve performance.
